@@ -1,0 +1,13 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "sundogs": {
+      "type": "remote",
+      "url": "https://sundo.gs/mcp",
+      "oauth": false,
+      "headers": {
+        "Authorization": "Bearer {env:SITE_APPS_KEY}"
+      }
+    }
+  }
+}

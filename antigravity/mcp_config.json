@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "sundogs": {
+      "serverUrl": "https://sundo.gs/mcp",
+      "headers": {
+        "Authorization": "Bearer sak_..."
+      }
+    }
+  }
+}

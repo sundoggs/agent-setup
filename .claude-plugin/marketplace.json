@@ -1,0 +1,24 @@
+{
+  "name": "sundogs",
+  "description": "Mini apps for websites on Cloudflare: forms, redirects, popups, timers, reviews and more. Free and paid, installed by your AI coder.",
+  "owner": {
+    "name": "Sundogs",
+    "url": "https://sundo.gs"
+  },
+  "plugins": [
+    {
+      "name": "sundogs",
+      "source": "./plugins/sundogs",
+      "description": "Find, claim, download and install Sundogs apps from your AI coder. Adds the registry's MCP server (browser sign-in) and skills for first-time setup, installing, updating and DIY playbooks.",
+      "category": "web-development",
+      "tags": [
+        "cloudflare",
+        "website",
+        "forms",
+        "redirects",
+        "popups",
+        "install"
+      ]
+    }
+  ]
+}

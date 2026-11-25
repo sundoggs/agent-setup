@@ -1,0 +1,10 @@
+# Sundogs: add to ~/.codex/config.toml (all projects) or .codex/config.toml (one trusted project).
+# Same thing from the shell:  codex mcp add sundogs --url https://sundo.gs/mcp
+# Then sign in with the browser:  codex mcp login sundogs
+[mcp_servers.sundogs]
+url = "https://sundo.gs/mcp"
+scopes = ["catalog:read", "download", "checkout:create"]
+
+# Headless or CI (no browser): create an API key with the "download" permission on your account page,
+# export it as SITE_APPS_KEY, and uncomment the next line (a bearer token is tried before the browser sign-in).
+# bearer_token_env_var = "SITE_APPS_KEY"

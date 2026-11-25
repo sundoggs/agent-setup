@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "sundogs": {
+      "type": "http",
+      "url": "https://sundo.gs/mcp",
+      "headers": {
+        "Authorization": "Bearer ${SITE_APPS_KEY}"
+      }
+    }
+  }
+}

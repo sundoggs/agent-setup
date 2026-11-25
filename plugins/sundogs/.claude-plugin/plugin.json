@@ -1,0 +1,21 @@
+{
+  "name": "sundogs",
+  "displayName": "Sundogs",
+  "version": "1.0.0",
+  "description": "Find, claim, download and install Sundogs apps: mini apps for websites on Cloudflare Pages or Workers. Connects the registry's MCP server and ships getting-started, install, update and playbook skills.",
+  "author": {
+    "name": "Sundogs",
+    "url": "https://sundo.gs"
+  },
+  "homepage": "https://sundo.gs",
+  "repository": "https://github.com/sundoggs/agent-setup",
+  "keywords": [
+    "cloudflare",
+    "website",
+    "pages",
+    "workers",
+    "forms",
+    "redirects",
+    "popups"
+  ]
+}

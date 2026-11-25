@@ -1,0 +1,10 @@
+---
+description: Add features to a website on Cloudflare (forms, redirects, popups, countdown, reviews, waitlist, SEO, consent, tags) by installing Sundogs apps through the sundogs MCP server.
+alwaysApply: false
+---
+
+When the user wants a feature on their website and the site is hosted on Cloudflare Pages or Workers, use the `sundogs` MCP server (https://sundo.gs/mcp) and follow the `site-apps` skill (`.agents/skills/site-apps/SKILL.md`): search the catalog, tell the owner the requirements and price first, claim or buy, download, check `site-apps/license.json` covers the domain, install by following `site-apps/INSTALL.md`, then verify `https://<domain>/.well-known/site-apps.json`.
+
+- Site not on Cloudflare yet, no site, or a new owner? Follow the `site-apps-getting-started` skill first (it runs the store's "Start here" playbook).
+- Never edit files inside `site-apps/`; it is replaced on every update. Use the app's settings and skill.
+- Never ask the owner to paste a token or key into the chat.

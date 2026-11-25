@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "sundogs": {
+      "url": "https://sundo.gs/mcp",
+      "auth": {
+        "CLIENT_ID": "cursor",
+        "scopes": [
+          "catalog:read",
+          "download",
+          "checkout:create",
+          "offline_access"
+        ]
+      }
+    }
+  }
+}
