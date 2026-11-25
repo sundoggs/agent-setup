@@ -52,7 +52,7 @@ Updated: 2026-11-02
 - [x] 1. Cloudflare account
 - [ ] 2. First site
 - [ ] 3. Domain and DNS (in parallel, waiting)
-- [ ] 4. Free apps installed
+- [ ] 4. App installed
 - [ ] 5. Admin sign-in and agent connection
 - [ ] 6. First win
 
@@ -69,7 +69,7 @@ Offer to commit it with the project (it holds no secrets) so another computer or
 
 Run the **Start here** playbook (`start-here`). It detects or asks: can you run commands, is there a site, where it's hosted, is there a domain and where its DNS is, is there a Cloudflare account, GitHub, and who deploys today. Record the answers and the route in the note.
 
-Then tell the owner the plan in two or three sentences, with times. For example: "You have a domain at GoDaddy but no site yet. Plan: a free Cloudflare account (3 minutes), your site live on a free address (10 minutes), the free apps (10 minutes), and in parallel we point your domain at Cloudflare (10 minutes of clicks, then up to a day of waiting)."
+Then tell the owner the plan in two or three sentences, with times. For example: "You have a domain at GoDaddy but no site yet. Plan: a free Cloudflare account (3 minutes), your site live on a free address (10 minutes), the app you need (10 minutes), and in parallel we point your domain at Cloudflare (10 minutes of clicks, then up to a day of waiting)."
 
 Routes that stop the course early, honestly:
 
@@ -104,11 +104,11 @@ Only if the owner has a domain and its DNS isn't on Cloudflare (`dig +short NS <
 
 No domain? Mark it "not needed yet" and move on. The site works on `workers.dev`; suggest a domain later for a business site.
 
-## Lesson 4: Install the free apps
+## Lesson 4: Install the app you need
 
 - **Check first:** is the store's MCP server `sundogs` connected (`site-apps` on older setups: the same server, keep it)? If its tools are missing, connect it (Claude Code: run `claude mcp add --transport http -s user sundogs https://sundo.gs/mcp` yourself, which adds it for all the owner's projects; Codex, Cursor, Gemini CLI, GitHub Copilot, opencode and other agents: https://sundo.gs/agents). If the browser sign-in fails, or the session has no browser, the owner makes an API key at https://sundo.gs/account/agents and it goes in the MCP settings as an `Authorization: Bearer` header from the `SITE_APPS_KEY` environment variable, never in the chat.
 - **Sign-in is the owner's click, said up front:** your first message after adding a connection tells the owner, word for word: "Restart Claude Code in this folder, type /mcp, choose Authenticate on each connection, click Allow in the browser." An agent can't run `claude mcp login` (it needs a real terminal), and new connections load only when Claude Code starts. Keep the progress note (above) so the restarted session picks up where you were.
-- **Do:** claim the free apps (`claim_free_app` for Forms, Analytics and Cookie Consent; Site Health comes with every download, or name them all in `get_download`'s `apps`; `search_catalog` shows which apps are free today), `get_download` for the site's address, unzip as `site-apps/`, verify, and follow `site-apps/INSTALL.md` from step 0. INSTALL.md covers this end to end (with the Claude Code plugin, its `sundogs` skill drives it).
+- **Do:** `get_download` for the site's address with `apps` naming the app the owner asked for (Site Health comes with every download), unzip as `site-apps/`, verify, and follow `site-apps/INSTALL.md` from step 0. Once it works, offer the other free apps in one question (`search_catalog` shows which apps are free today). INSTALL.md covers this end to end (with the Claude Code plugin, its `sundogs` skill drives it).
 - **Done when:** `curl -s https://<site address>/.well-known/site-apps.json` shows `"ok": true`, `"db": "connected"` and `"schema": "ok"`.
 
 ## Lesson 5: Admin sign-in, and connect the admin to the agent

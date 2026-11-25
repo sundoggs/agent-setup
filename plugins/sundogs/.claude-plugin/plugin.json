@@ -9,6 +9,7 @@
   },
   "homepage": "https://sundo.gs",
   "repository": "https://github.com/sundoggs/agent-setup",
+  "license": "MIT",
   "keywords": [
     "cloudflare",
     "website",
@@ -17,5 +18,10 @@
     "forms",
     "redirects",
     "popups"
-  ]
+  ],
+  "icon": "./icon.png",
+  "documentationUrl": "https://sundo.gs/docs",
+  "supportUrl": "https://sundo.gs/contact",
+  "privacyPolicyUrl": "https://sundo.gs/legal/privacy",
+  "termsOfServiceUrl": "https://sundo.gs/legal/terms"
 }
