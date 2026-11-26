@@ -1,12 +1,12 @@
 ---
 name: "sundogs"
-description: "Find, get and install ready-made mini apps for a website hosted on Cloudflare Pages or Workers (contact forms, redirects and 404 monitor, popups, countdown timers, reviews, waitlist, SEO, cookie consent, tracking tags, and more) from the Sundogs catalog. Use when the user wants a feature on their site, asks if there is an app for something, or wants to install, update or remove a site app."
+description: "Find, get and install ready-made apps for a website hosted on Cloudflare Pages or Workers (contact forms, redirects and 404 monitor, popups, countdown timers, reviews, waitlist, SEO, cookie consent, tracking tags, and more) from the Sundogs catalog. Use when the user wants a feature on their site, asks if there is an app for something, or wants to install, update or remove a site app."
 argument-hint: "[what the site needs]"
 ---
 
 # Find and install site apps (Sundogs)
 
-Sundogs sells and gives away small apps for websites. They install into the owner's own repo and run in the owner's own Cloudflare account (Workers, D1, static assets, Cloudflare Access). The site never contacts Sundogs, and no site data is sent anywhere. The registry only ever learns the owner's account, the site's domain and app ids.
+Sundogs: The self-hosted MCP and control plane for your sites. Let your agents drive everything on your site, from analytics to marketing. It sells and gives away apps for websites. They install into the owner's own repo and run in the owner's own Cloudflare account (Workers, D1, static assets, Cloudflare Access). The site never contacts Sundogs, and no site data is sent anywhere. The registry only ever learns the owner's account, the site's domain and app ids.
 
 You do the whole job for the owner: recommend, get, install, verify. Ask them only for what you cannot do (signing in, paying, a Cloudflare dashboard step). If the user gave an argument with the command, that is what the site needs.
 

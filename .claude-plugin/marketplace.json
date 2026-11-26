@@ -1,6 +1,6 @@
 {
   "name": "sundogs",
-  "description": "Mini apps for websites on Cloudflare: forms, redirects, popups, timers, reviews and more. Free and paid, installed by your AI coder.",
+  "description": "The self-hosted MCP and control plane for your sites. Let your agents drive everything on your site, from analytics to marketing.",
   "owner": {
     "name": "Sundogs",
     "url": "https://sundo.gs"
@@ -9,7 +9,7 @@
     {
       "name": "sundogs",
       "source": "./plugins/sundogs",
-      "description": "Find, claim, download and install Sundogs apps from your AI coder. Adds the registry's MCP server (browser sign-in) and skills for first-time setup, installing, updating and DIY playbooks.",
+      "description": "The self-hosted MCP and control plane for your sites: connects your agent to the Sundogs store and ships the getting-started, install, update and playbook skills.",
       "category": "web-development",
       "tags": [
         "cloudflare",
